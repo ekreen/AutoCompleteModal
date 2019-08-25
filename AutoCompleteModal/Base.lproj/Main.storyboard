@@ -54,7 +54,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="01e-SX-hih">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="01e-SX-hih">
                                         <rect key="frame" x="30" y="86.5" width="304" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -67,6 +67,12 @@
                                             <action selector="okButtonPushed:" destination="KtS-gO-jNm" eventType="touchUpInside" id="zL2-oL-Aeo"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dqB-hU-SyA">
+                                        <rect key="frame" x="30" y="146.5" width="304" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -78,7 +84,11 @@
                                     <constraint firstAttribute="trailing" secondItem="01e-SX-hih" secondAttribute="trailing" constant="30" id="KTr-UW-jmC"/>
                                     <constraint firstItem="5nF-au-QSo" firstAttribute="top" secondItem="p2B-qY-WIS" secondAttribute="top" constant="30" id="OK6-8J-GXu"/>
                                     <constraint firstAttribute="height" constant="300" id="SI4-2o-uHs"/>
+                                    <constraint firstItem="dqB-hU-SyA" firstAttribute="leading" secondItem="p2B-qY-WIS" secondAttribute="leading" constant="30" id="hkE-tn-zch"/>
+                                    <constraint firstItem="dqB-hU-SyA" firstAttribute="centerX" secondItem="p2B-qY-WIS" secondAttribute="centerX" id="r3F-9F-22p"/>
+                                    <constraint firstItem="dqB-hU-SyA" firstAttribute="top" secondItem="01e-SX-hih" secondAttribute="bottom" constant="30" id="ry7-LG-S7L"/>
                                     <constraint firstItem="9oA-Iv-p2K" firstAttribute="centerX" secondItem="p2B-qY-WIS" secondAttribute="centerX" id="se7-Zw-FxH"/>
+                                    <constraint firstAttribute="trailing" secondItem="dqB-hU-SyA" secondAttribute="trailing" constant="30" id="uEa-fv-XE5"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -93,11 +103,12 @@
                     <connections>
                         <outlet property="firstTextField" destination="01e-SX-hih" id="Slw-WZ-G50"/>
                         <outlet property="modalView" destination="p2B-qY-WIS" id="7Ts-vW-Yck"/>
+                        <outlet property="secondTextField" destination="dqB-hU-SyA" id="rn2-qA-T4d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IcR-0R-Xbp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="25"/>
+            <point key="canvasLocation" x="901" y="21"/>
         </scene>
     </scenes>
 </document>

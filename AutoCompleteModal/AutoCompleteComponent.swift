@@ -9,18 +9,24 @@
 import UIKit
 
 class AutoCompleteComponent: NSObject {
+    
+    // MARK: - Properties
+    
+    var datas: [String]! {
+        didSet {
+            reloadTableView()
+        }
+    }
     private var autoCompleteDatas : [String] = []
-    var datas: [String] = []
-    
     private var heightConstraint: NSLayoutConstraint!
-    
-    var tableView: UITableView
+    private var tableView: UITableView!
     
     init(heightConstraint: NSLayoutConstraint, tableView: UITableView) {
+        super.init()
         self.heightConstraint = heightConstraint
         self.tableView = tableView
-        super.init()
-        prepareTableView()
+        self.prepareTableView()
+        self.datas = []
     }
 }
 
@@ -31,7 +37,7 @@ extension AutoCompleteComponent: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "identifierCell") else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "autoCompleteCell") else {
             return UITableViewCell()
         }
         
@@ -81,9 +87,7 @@ private extension AutoCompleteComponent {
     func prepareTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "identifierCell")
-        tableView.reloadData()
-        updateHeight()
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "autoCompleteCell")
     }
     
     func reloadTableView() {
