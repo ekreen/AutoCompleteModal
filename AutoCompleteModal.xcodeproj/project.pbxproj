@@ -13,7 +13,7 @@
 		A203A8982312DBA800B552D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A203A8972312DBA800B552D7 /* Assets.xcassets */; };
 		A203A89B2312DBA800B552D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A203A8992312DBA800B552D7 /* LaunchScreen.storyboard */; };
 		A203A8A32312DCF100B552D7 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203A8A22312DCF100B552D7 /* ModalViewController.swift */; };
-		A203A8A52312E53800B552D7 /* AutoCompleteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203A8A42312E53800B552D7 /* AutoCompleteDelegate.swift */; };
+		A203A8A52312E53800B552D7 /* AutoCompleteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203A8A42312E53800B552D7 /* AutoCompleteComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		A203A89A2312DBA800B552D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A203A89C2312DBA800B552D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A203A8A22312DCF100B552D7 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
-		A203A8A42312E53800B552D7 /* AutoCompleteDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompleteDelegate.swift; sourceTree = "<group>"; };
+		A203A8A42312E53800B552D7 /* AutoCompleteComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompleteComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 				A203A8992312DBA800B552D7 /* LaunchScreen.storyboard */,
 				A203A89C2312DBA800B552D7 /* Info.plist */,
 				A203A8A22312DCF100B552D7 /* ModalViewController.swift */,
-				A203A8A42312E53800B552D7 /* AutoCompleteDelegate.swift */,
+				A203A8A42312E53800B552D7 /* AutoCompleteComponent.swift */,
 			);
 			path = AutoCompleteModal;
 			sourceTree = "<group>";
@@ -143,7 +143,7 @@
 			files = (
 				A203A8932312DBA700B552D7 /* ViewController.swift in Sources */,
 				A203A8A32312DCF100B552D7 /* ModalViewController.swift in Sources */,
-				A203A8A52312E53800B552D7 /* AutoCompleteDelegate.swift in Sources */,
+				A203A8A52312E53800B552D7 /* AutoCompleteComponent.swift in Sources */,
 				A203A8912312DBA700B552D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

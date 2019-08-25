@@ -202,10 +202,16 @@ SWIFT_CLASS("_TtC17AutoCompleteModal11AppDelegate")
 @end
 
 
-SWIFT_CLASS("_TtC17AutoCompleteModal20AutoCompleteDelegate")
-@interface AutoCompleteDelegate : NSObject
+SWIFT_CLASS("_TtC17AutoCompleteModal21AutoCompleteComponent")
+@interface AutoCompleteComponent : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UITextField;
+
+@interface AutoCompleteComponent (SWIFT_EXTENSION(AutoCompleteModal)) <UITextFieldDelegate>
+- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -213,13 +219,12 @@ SWIFT_CLASS("_TtC17AutoCompleteModal20AutoCompleteDelegate")
 @class UITableView;
 @class UITableViewCell;
 
-@interface AutoCompleteDelegate (SWIFT_EXTENSION(AutoCompleteModal)) <UITableViewDataSource, UITableViewDelegate>
+@interface AutoCompleteComponent (SWIFT_EXTENSION(AutoCompleteModal)) <UITableViewDataSource, UITableViewDelegate>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
-@class UITextField;
 @class UIView;
 @class UIButton;
 @class NSBundle;
@@ -233,11 +238,6 @@ SWIFT_CLASS("_TtC17AutoCompleteModal19ModalViewController")
 - (IBAction)okButtonPushed:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface ModalViewController (SWIFT_EXTENSION(AutoCompleteModal)) <UITextFieldDelegate>
-- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

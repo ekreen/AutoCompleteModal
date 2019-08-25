@@ -230,6 +230,70 @@
 			<key>uniqueIdentifier</key>
 			<string>1BEE20A9-52FC-4488-8B6A-CD91C825A039</string>
 		</dict>
+		<key>1BF5BEE9-F525-44F0-B6C3-4DF9E8A70EC5</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1BF5BEE9-F525-44F0-B6C3-4DF9E8A70EC5.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>AutoCompleteModal project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AutoCompleteModal</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AutoCompleteModal</string>
+			<key>timeStartedRecording</key>
+			<real>588449191.94474101</real>
+			<key>timeStoppedRecording</key>
+			<real>588449192.95829797</real>
+			<key>title</key>
+			<string>Build AutoCompleteModal</string>
+			<key>uniqueIdentifier</key>
+			<string>1BF5BEE9-F525-44F0-B6C3-4DF9E8A70EC5</string>
+		</dict>
+		<key>2396B89D-DF40-4816-9948-7BA835675EF5</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2396B89D-DF40-4816-9948-7BA835675EF5.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>AutoCompleteModal project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AutoCompleteModal</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AutoCompleteModal</string>
+			<key>timeStartedRecording</key>
+			<real>588448983.01499104</real>
+			<key>timeStoppedRecording</key>
+			<real>588448984.09617603</real>
+			<key>title</key>
+			<string>Build AutoCompleteModal</string>
+			<key>uniqueIdentifier</key>
+			<string>2396B89D-DF40-4816-9948-7BA835675EF5</string>
+		</dict>
 		<key>29069C7C-4DB5-4F69-8EF6-86F8A724D5D7</key>
 		<dict>
 			<key>className</key>
@@ -517,6 +581,38 @@
 			<string>Build AutoCompleteModal</string>
 			<key>uniqueIdentifier</key>
 			<string>5444971C-74E8-49C2-B813-D89FFEE9D7C6</string>
+		</dict>
+		<key>5C3ECC51-1601-40C5-9A68-831F1182F87F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5C3ECC51-1601-40C5-9A68-831F1182F87F.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>AutoCompleteModal project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AutoCompleteModal</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AutoCompleteModal</string>
+			<key>timeStartedRecording</key>
+			<real>588449163.95769799</real>
+			<key>timeStoppedRecording</key>
+			<real>588449164.47608399</real>
+			<key>title</key>
+			<string>Build AutoCompleteModal</string>
+			<key>uniqueIdentifier</key>
+			<string>5C3ECC51-1601-40C5-9A68-831F1182F87F</string>
 		</dict>
 		<key>5C63F9C9-95D1-43D6-838D-C84EFD87D94D</key>
 		<dict>
@@ -966,6 +1062,38 @@
 			<key>uniqueIdentifier</key>
 			<string>92E56403-EAAD-45CE-838D-740B20A6BE3B</string>
 		</dict>
+		<key>9A945E7C-8FAD-4B40-962C-F7D120975C72</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9A945E7C-8FAD-4B40-962C-F7D120975C72.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>AutoCompleteModal project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AutoCompleteModal</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AutoCompleteModal</string>
+			<key>timeStartedRecording</key>
+			<real>588447970.49445295</real>
+			<key>timeStoppedRecording</key>
+			<real>588447971.51861</real>
+			<key>title</key>
+			<string>Build AutoCompleteModal</string>
+			<key>uniqueIdentifier</key>
+			<string>9A945E7C-8FAD-4B40-962C-F7D120975C72</string>
+		</dict>
 		<key>9BD4C185-954E-4D5F-B508-AA4592AF5162</key>
 		<dict>
 			<key>className</key>
@@ -1125,6 +1253,38 @@
 			<string>Build AutoCompleteModal</string>
 			<key>uniqueIdentifier</key>
 			<string>A4819922-2A01-46E5-B785-CB4AF086965A</string>
+		</dict>
+		<key>ABA3DDA7-D415-4F9E-84BF-6CE57467FA32</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>ABA3DDA7-D415-4F9E-84BF-6CE57467FA32.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>AutoCompleteModal project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AutoCompleteModal</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AutoCompleteModal</string>
+			<key>timeStartedRecording</key>
+			<real>588449572.85154605</real>
+			<key>timeStoppedRecording</key>
+			<real>588449574.16103899</real>
+			<key>title</key>
+			<string>Build AutoCompleteModal</string>
+			<key>uniqueIdentifier</key>
+			<string>ABA3DDA7-D415-4F9E-84BF-6CE57467FA32</string>
 		</dict>
 		<key>B382B7B3-4E71-417B-9B4F-6D7C05107AAF</key>
 		<dict>
@@ -1413,6 +1573,38 @@
 			<string>Build AutoCompleteModal</string>
 			<key>uniqueIdentifier</key>
 			<string>CB7316DB-B9EC-44BF-B397-E74BBB88A3F7</string>
+		</dict>
+		<key>CBBCA3C9-CDF4-4809-873E-0E2C5F127CD9</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CBBCA3C9-CDF4-4809-873E-0E2C5F127CD9.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>AutoCompleteModal project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AutoCompleteModal</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AutoCompleteModal</string>
+			<key>timeStartedRecording</key>
+			<real>588449059.11306298</real>
+			<key>timeStoppedRecording</key>
+			<real>588449060.03661001</real>
+			<key>title</key>
+			<string>Build AutoCompleteModal</string>
+			<key>uniqueIdentifier</key>
+			<string>CBBCA3C9-CDF4-4809-873E-0E2C5F127CD9</string>
 		</dict>
 		<key>D0D283F2-A197-4010-BCCC-79205393F6E8</key>
 		<dict>

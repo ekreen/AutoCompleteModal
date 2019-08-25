@@ -230,6 +230,38 @@
 			<key>uniqueIdentifier</key>
 			<string>330287CD-8B11-431E-BD1C-9A342BC4716D</string>
 		</dict>
+		<key>3CB52447-3FA5-4A45-894D-A3F4E6AE1D72</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>3CB52447-3FA5-4A45-894D-A3F4E6AE1D72.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>AutoCompleteModal project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AutoCompleteModal</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug AutoCompleteModal</string>
+			<key>timeStartedRecording</key>
+			<real>588447971.42424595</real>
+			<key>timeStoppedRecording</key>
+			<real>588448983.25455499</real>
+			<key>title</key>
+			<string>Debug AutoCompleteModal</string>
+			<key>uniqueIdentifier</key>
+			<string>3CB52447-3FA5-4A45-894D-A3F4E6AE1D72</string>
+		</dict>
 		<key>3F314F08-F40B-49E6-9574-352805276DB9</key>
 		<dict>
 			<key>className</key>
@@ -389,6 +421,38 @@
 			<string>Debug AutoCompleteModal</string>
 			<key>uniqueIdentifier</key>
 			<string>4ABDF715-7A24-4403-98B9-BB83C38F7AFE</string>
+		</dict>
+		<key>5455F690-21E0-4AB6-86DD-1BDED605463D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>5455F690-21E0-4AB6-86DD-1BDED605463D.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>AutoCompleteModal project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AutoCompleteModal</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug AutoCompleteModal</string>
+			<key>timeStartedRecording</key>
+			<real>588448984.00643206</real>
+			<key>timeStoppedRecording</key>
+			<real>588449059.30269301</real>
+			<key>title</key>
+			<string>Debug AutoCompleteModal</string>
+			<key>uniqueIdentifier</key>
+			<string>5455F690-21E0-4AB6-86DD-1BDED605463D</string>
 		</dict>
 		<key>55E0E1C6-F520-48A1-BC2B-92AB3F0E638D</key>
 		<dict>
@@ -581,6 +645,38 @@
 			<string>Debug AutoCompleteModal</string>
 			<key>uniqueIdentifier</key>
 			<string>752A692B-42D4-4571-8A2B-40D4A6AA11BB</string>
+		</dict>
+		<key>77E5E521-2342-4DBA-A1CE-45D412F2DFD2</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>77E5E521-2342-4DBA-A1CE-45D412F2DFD2.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>AutoCompleteModal project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AutoCompleteModal</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug AutoCompleteModal</string>
+			<key>timeStartedRecording</key>
+			<real>588449192.89515495</real>
+			<key>timeStoppedRecording</key>
+			<real>588449573.04390705</real>
+			<key>title</key>
+			<string>Debug AutoCompleteModal</string>
+			<key>uniqueIdentifier</key>
+			<string>77E5E521-2342-4DBA-A1CE-45D412F2DFD2</string>
 		</dict>
 		<key>7AEB592E-C398-4EF8-8D1F-7A6BFA04A156</key>
 		<dict>
@@ -1253,6 +1349,38 @@
 			<string>Debug AutoCompleteModal</string>
 			<key>uniqueIdentifier</key>
 			<string>E9BCCDB5-8686-4F1D-96B4-F3B5E6BB5038</string>
+		</dict>
+		<key>EB9EAD80-ACD6-4837-AF4C-8804076CC979</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>EB9EAD80-ACD6-4837-AF4C-8804076CC979.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>AutoCompleteModal project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AutoCompleteModal</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug AutoCompleteModal</string>
+			<key>timeStartedRecording</key>
+			<real>588449059.938743</real>
+			<key>timeStoppedRecording</key>
+			<real>588449164.19741499</real>
+			<key>title</key>
+			<string>Debug AutoCompleteModal</string>
+			<key>uniqueIdentifier</key>
+			<string>EB9EAD80-ACD6-4837-AF4C-8804076CC979</string>
 		</dict>
 		<key>F064F3FA-0007-4581-A52A-18892AE8D585</key>
 		<dict>

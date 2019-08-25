@@ -1,8 +1,8 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "3f62d2fb0ea15cf1e94606fdf63dc249"
-build_time: [1566754567, 380650000]
+build_time: [1566756772, 902492000]
 inputs:
   "/Users/kevinesprit/Documents/workspace-ios/AutoCompleteModal/AutoCompleteModal/ViewController.swift": [1566745639, 354254658]
-  "/Users/kevinesprit/Documents/workspace-ios/AutoCompleteModal/AutoCompleteModal/ModalViewController.swift": [1566754566, 831722254]
-  "/Users/kevinesprit/Documents/workspace-ios/AutoCompleteModal/AutoCompleteModal/AutoCompleteDelegate.swift": [1566750791, 621396710]
+  "/Users/kevinesprit/Documents/workspace-ios/AutoCompleteModal/AutoCompleteModal/ModalViewController.swift": [1566756296, 505484482]
+  "/Users/kevinesprit/Documents/workspace-ios/AutoCompleteModal/AutoCompleteModal/AutoCompleteComponent.swift": [1566756729, 291315827]
   "/Users/kevinesprit/Documents/workspace-ios/AutoCompleteModal/AutoCompleteModal/AppDelegate.swift": [1566745639, 345151423]

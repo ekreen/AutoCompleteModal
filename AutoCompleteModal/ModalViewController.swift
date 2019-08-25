@@ -17,7 +17,7 @@ class ModalViewController: UIViewController {
     // MARK: - Properties
     private var firstTableView: UITableView!
     private var heightConstraint: NSLayoutConstraint!
-    private var firstDelegate: AutoCompleteDelegate!
+    private var autoCompleteComponent: AutoCompleteComponent!
     private let datas = ["Tomato","Orange","Lemon","Pineapple","Apple","Peach","Banana","Cherry","Olive","Kiwifruit","Blackberry","Papaya"]
     
     override func viewDidLoad() {
@@ -43,7 +43,7 @@ private extension ModalViewController {
     }
     
     func setupTextField() {
-        firstTextField.delegate = self
+        firstTextField.delegate = autoCompleteComponent
     }
     
     func setupTableView() {
@@ -60,45 +60,7 @@ private extension ModalViewController {
         heightConstraint.isActive = true
         
         // Register
-        firstDelegate = AutoCompleteDelegate(heightConstraint: heightConstraint)
-        firstTableView.delegate = firstDelegate
-        firstTableView.dataSource = firstDelegate
-        firstTableView.register(UITableViewCell.self, forCellReuseIdentifier: "identifierCell")
-        firstTableView.reloadData()
-        firstDelegate.updateHeight(firstTableView)
-    }
-    
-    func reloadTableView() {
-        firstTableView.reloadData()
-        firstDelegate.updateHeight(firstTableView)
-    }
-}
-
-extension ModalViewController: UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
-        firstTableView.isHidden = true
-        
-        guard var text = textField.text else {
-            return true
-        }
-        
-        if text.count > range.lowerBound {
-            text.removeLast()
-        } else {
-            text.append(string)
-        }
-        
-        guard text.count > 2 else {
-            return true
-        }
-        
-        firstDelegate.autoCompleteDatas = datas.filter {
-            $0.uppercased().contains(text.uppercased())
-        }
-        
-        reloadTableView()
-        firstTableView.isHidden = false
-        return true
+        autoCompleteComponent = AutoCompleteComponent(heightConstraint: heightConstraint, tableView: firstTableView)
+        autoCompleteComponent.datas = datas
     }
 }
