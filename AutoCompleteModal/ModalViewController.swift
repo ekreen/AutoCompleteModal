@@ -18,6 +18,10 @@ class ModalViewController: UIViewController {
     // MARK: - Properties
     private var firstAutoCompleteComponent: AutoCompleteComponent!
     private var secondAutoCompleteComponent: AutoCompleteComponent!
+    
+    private var firstSelected: String?
+    private var secondSelected: String?
+    
     private let datas = ["Tomato","Orange","Lemon","Pineapple","Apple","Peach","Banana","Cherry","Olive","Kiwifruit","Blackberry","Papaya"]
     
     override func viewDidLoad() {
@@ -49,13 +53,37 @@ private extension ModalViewController {
     }
     
     func setupAutoCompletionComponent() {
-        firstAutoCompleteComponent = prepareAutoCompletionComponent(for: firstTextField)
-        secondAutoCompleteComponent = prepareAutoCompletionComponent(for: secondTextField)
+        firstAutoCompleteComponent = prepareAutoCompletionComponent(for: firstTextField,
+                                                                    elementDidSelected: { [weak self] element in
+                                                                        guard let strongSelf = self else { return }
+                                                                        strongSelf.firstWasSelected(value: element as! String)
+        },
+                                                                    textDidChanged: { [weak self] in
+                                                                        
+                                                                        guard let strongSelf = self else { return }
+                                                                        strongSelf.firstSelected = nil
+                                                                        
+                                                                        if strongSelf.secondSelected == nil {
+                                                                            strongSelf.firstAutoCompleteComponent.datas = strongSelf.datas
+                                                                        }
+        })
+        
+        
+        secondAutoCompleteComponent = prepareAutoCompletionComponent(for: secondTextField, elementDidSelected: { element in
+            self.secondWasSelected(value: element as! String)
+        },
+                                                                     textDidChanged: {
+                                                                        self.secondSelected = nil
+                                                                        
+                                                                        if self.firstSelected == nil {
+                                                                            self.secondAutoCompleteComponent.datas = self.datas
+                                                                        }
+        })
     }
 }
 
 private extension ModalViewController {
-    func prepareAutoCompletionComponent(for textField: UITextField) -> AutoCompleteComponent {
+    func prepareAutoCompletionComponent(for textField: UITextField, elementDidSelected: ((Any) -> Void)?, textDidChanged: (() -> Void)?) -> AutoCompleteComponent {
         
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -70,9 +98,27 @@ private extension ModalViewController {
         heightConstraint.isActive = true
         
         // Register
-        let autoCompleteComponent = AutoCompleteComponent(heightConstraint: heightConstraint, tableView: tableView)
+        let autoCompleteComponent = AutoCompleteComponent(heightConstraint: heightConstraint, tableView: tableView, elementDidSelected: elementDidSelected, textDidChanged: textDidChanged)
         autoCompleteComponent.datas = datas
         
         return autoCompleteComponent
+    }
+    
+    func firstWasSelected(value: String) {
+        firstSelected = value
+        firstTextField.text = value
+        
+        if secondSelected == nil {
+            secondAutoCompleteComponent.datas = ["toto", "titi", "tata"]
+        }
+    }
+    
+    func secondWasSelected(value: String) {
+        secondSelected = value
+        secondTextField.text = value
+        
+        if firstSelected == nil {
+            firstAutoCompleteComponent.datas = ["toto", "titi", "tata"]
+        }
     }
 }

@@ -20,8 +20,12 @@ class AutoCompleteComponent: NSObject {
     private var autoCompleteDatas : [String] = []
     private var heightConstraint: NSLayoutConstraint!
     private var tableView: UITableView!
+    private var textDidChanged: (() -> Void)?
+    private var elementDidSelected: ((Any) -> Void)?
     
-    init(heightConstraint: NSLayoutConstraint, tableView: UITableView) {
+    init(heightConstraint: NSLayoutConstraint, tableView: UITableView, elementDidSelected: ((Any) -> Void)?, textDidChanged: (() -> Void)?) {
+        self.textDidChanged = textDidChanged
+        self.elementDidSelected = elementDidSelected
         super.init()
         self.heightConstraint = heightConstraint
         self.tableView = tableView
@@ -48,6 +52,7 @@ extension AutoCompleteComponent: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         tableView.isHidden = true
+        elementDidSelected?(autoCompleteDatas[indexPath.row])
     }
 }
 
@@ -55,7 +60,7 @@ extension AutoCompleteComponent: UITableViewDelegate, UITableViewDataSource {
 // MARK: - Textfield delegate
 extension AutoCompleteComponent: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
+        textDidChanged?()
         tableView.isHidden = true
         
         guard var text = textField.text else {
